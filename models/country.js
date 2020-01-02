@@ -12,9 +12,6 @@ const NameSchema = new Schema({
     area: Number,
     timezones: Array,
     borders: Array,
-    currencies: Array,
-    languages: Array,
-    translations: Array,
     flag: String,
 });
 
