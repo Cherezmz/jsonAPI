@@ -1,6 +1,7 @@
 //seed is used to tell coputer to create db
 //according to schema. That is why 
 // 1-s line is file with schema model
+//after seeding each entry has its own DB ID
 
 
 const Country = require('../models/country')
@@ -13,7 +14,7 @@ const countryData = data.map(item => {
     country.translations = item.translations
     return country
 })
-console.log(countryData)
+//console.log(countryData)
 
 Country.deleteMany({})
     .then(() => {
