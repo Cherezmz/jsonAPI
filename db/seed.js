@@ -1,4 +1,9 @@
-const Country = require('../db/data')
+//seed is used to tell coputer to create db
+//according to schema. That is why 
+// 1-s line is file with schema model
+
+
+const Country = require('../models/country')
 const data = require('../db/countries.json')
 
 const countryData = data.map(item => {
@@ -10,7 +15,7 @@ const countryData = data.map(item => {
 })
 console.log(countryData)
 
-Country.remove({})
+Country.deleteMany({})
     .then(() => {
         Country.create(countryData)
             .then(countries => {
@@ -21,3 +26,5 @@ Country.remove({})
                 console.log(err)
             })
     })
+
+
