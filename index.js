@@ -8,8 +8,8 @@ const app = express();
 
 //connect to mongodb
 //name of db need to be checked
-mongoose.connect("mongodb://localhost/countrydata");
-mongoose.Promise = global.Promise;
+//mongoose.connect("mongodb://localhost/countrydata");
+//mongoose.Promise = global.Promise;
 app.use(cors());
 //middleware
 app.use(bodyParser.urlencoded({ extended: true }));

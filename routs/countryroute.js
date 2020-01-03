@@ -1,5 +1,5 @@
 const express = require("express");
-const Country = require("../models/country.js")
+const Country = require("../models/Country.js")
 
 const router = express.Router();
 
