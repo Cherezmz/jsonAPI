@@ -1,8 +1,11 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
-const NameSchema = new Schema({
-    name: String,
+const CountriesSchema = new Schema({
+    name: {
+        type: String,
+        required: [true, "The name is incorrect"]
+    },
     topLevelDomain: Array,
     callingCodes: Array,
     capital: String,
@@ -29,4 +32,4 @@ const NameSchema = new Schema({
     flag: String,
 });
 
-module.exports = mongoose.model("Name", NameSchema) 
+module.exports = mongoose.model("Countries", CountriesSchema) 
