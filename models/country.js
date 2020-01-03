@@ -18,8 +18,20 @@ const NameSchema = new Schema({
     area: Number,
     timezones: Array,
     borders: Array,
-    currencies: [currenciesSchema],
-    translations: Array,
+    currencies: {
+        code: String,
+        name: String,
+        symbol: String
+    },
+    translations: {
+        de: String,
+        es: String,
+        fr: String,
+        ja: String,
+        it: String,
+        br: String,
+        pt: String
+    },
     flag: String,
 });
 
