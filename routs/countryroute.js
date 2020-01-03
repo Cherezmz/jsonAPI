@@ -25,6 +25,20 @@ router.get("/country/:name", (req, res) => {
     });
 });
 
+router.get("/country/cap/:capital", (req, res) => {
+    const userCountry = req.params.capital;
+    Country.findOne({ capital: userCountry }).then(country => {
+        res.json(country);
+    });
+});
+
+// router.get("/country/flag/:flag", (req, res) => {
+//     const userCountry = req.params.flag;
+//     Country.find({ flag: userCountry }).then(country => {
+//         res.json(country);
+//     });
+// });
+
 //add a new country
 router.post("/country", function (req, res, next) {
     //create an instance of db where 
