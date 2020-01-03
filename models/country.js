@@ -1,6 +1,12 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
+const currenciesSchema = new Schema({
+    code: String,
+    name: String,
+    symbol: String
+});
+
 const NameSchema = new Schema({
     name: String,
     topLevelDomain: Array,
@@ -12,6 +18,8 @@ const NameSchema = new Schema({
     area: Number,
     timezones: Array,
     borders: Array,
+    currencies: [currenciesSchema],
+    translations: Array,
     flag: String,
 });
 

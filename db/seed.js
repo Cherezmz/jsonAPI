@@ -23,6 +23,7 @@ const countryData = data.map(item => {
         country.languages = item.languages,
         country.translations = item.translations,
         country.flag = item.flag
+
     return country
 })
 //console.log(countryData)
