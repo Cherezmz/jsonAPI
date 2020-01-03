@@ -1,12 +1,6 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
-const currenciesSchema = new Schema({
-    code: String,
-    name: String,
-    symbol: String
-});
-
 const NameSchema = new Schema({
     name: String,
     topLevelDomain: Array,
