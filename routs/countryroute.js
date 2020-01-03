@@ -18,7 +18,7 @@ router.get("/country", (req, res) => {
     });
 });
 
-router.get("/:name", (req, res) => {
+router.get("/country/:name", (req, res) => {
     const userCountry = req.params.name;
     Country.findOne({ name: userCountry }).then(country => {
         res.json(country);
