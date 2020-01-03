@@ -2,6 +2,7 @@ const express = require("express");
 const routes = require("./routs/countryroute")
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 const app = express();
 
@@ -9,8 +10,9 @@ const app = express();
 //name of db need to be checked
 mongoose.connect("mongodb://localhost/countrydata");
 mongoose.Promise = global.Promise;
-
+app.use(cors());
 //middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //all the routes will be after /generalinfo

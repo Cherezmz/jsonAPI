@@ -1,18 +1,28 @@
 const express = require("express");
-const Country = require("../models/country")
+const Country = require("../models/country.js")
 
 const router = express.Router();
 
 
 //get the list of countries from DB
-router.get("/country", function (req, res, next) {
-    Country.find({}).then(function (countries) {
-        res.send(countries);
-    }
+// router.get("/country", function (req, res, next) {
+//     Country.find({}).then(function (countries) {
+//         res.json(countries);
+//         console.log(countries)
+//     });
+// });
 
+router.get("/country", (req, res) => {
+    Country.find().then(allUsers => {
+        res.json(allUsers);
+    });
+});
 
-
-    )
+router.get("/:name", (req, res) => {
+    const userCountry = req.params.name;
+    Country.findOne({ name: userCountry }).then(country => {
+        res.json(country);
+    });
 });
 
 //add a new country

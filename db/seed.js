@@ -28,7 +28,7 @@ const countryData = data.map(item => {
 })
 //console.log(countryData)
 
-Country.deleteMany({})
+Country.remove({})
     .then(() => {
         Country.create(countryData)
             .then(countries => {
