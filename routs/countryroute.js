@@ -22,22 +22,17 @@ router.get("/country/:name", (req, res) => {
     const userCountry = req.params.name;
     Country.findOne({ name: userCountry }).then(country => {
         res.json(country);
+        //res.json(country.flag);
     });
 });
 
 router.get("/country/cap/:capital", (req, res) => {
     const userCountry = req.params.capital;
     Country.findOne({ capital: userCountry }).then(country => {
-        res.json(country);
+        res.json(country.name);
     });
 });
 
-// router.get("/country/flag/:flag", (req, res) => {
-//     const userCountry = req.params.flag;
-//     Country.find({ flag: userCountry }).then(country => {
-//         res.json(country);
-//     });
-// });
 
 //add a new country
 router.post("/country", function (req, res, next) {
@@ -50,7 +45,6 @@ router.post("/country", function (req, res, next) {
     //use create method
     Country.create(req.body)
         .then(function (country) {
-
             res.send(country);
         }).catch(next);
 });
