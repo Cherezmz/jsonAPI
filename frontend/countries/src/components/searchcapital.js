@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import style from "./searchcapital.css"
 
 export default class SearchCapital extends Component {
     constructor() {
@@ -9,10 +10,10 @@ export default class SearchCapital extends Component {
     }
     render() {
         return (
-            <div className="capital">
+            <div >
 
-                <button>which capital is{this.state.capitalInInput}</button>
-                <input></input>
+                <button className="capitalButton">which capital is{this.state.capitalInInput}</button>
+                <input className="capitalInput"></input>
 
             </div >
 

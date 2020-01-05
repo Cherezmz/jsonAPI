@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import style from "./createcountry.css"
 
 export default class CreateCountry extends Component {
     constructor() {
@@ -9,10 +10,10 @@ export default class CreateCountry extends Component {
     }
     render() {
         return (
-            <div className="create">
+            <div>
 
-                <button>search for {this.state.createCountryFromInput}</button>
-                <input></input>
+                <button className="createButton">create new country {this.state.createCountryFromInput}</button>
+                <input className="createInput"></input>
 
             </div >
 

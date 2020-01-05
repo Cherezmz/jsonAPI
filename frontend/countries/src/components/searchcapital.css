@@ -1,0 +1,23 @@
+.capitalButton{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+    width:75x;
+    height:30px;
+    margin-top: 50%;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+.capitalInput{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+    width: 75px;
+    height:25px;
+    margin-top: 50%;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
