@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import style from "./searchcountry.css"
 
 export default class SearchCountry extends Component {
     constructor() {
@@ -9,10 +10,10 @@ export default class SearchCountry extends Component {
     }
     render() {
         return (
-            <div className="search">
+            <div >
 
-                <button>search for {this.state.countryInInput}</button>
-                <input></input>
+                <button className="searchbutton">search for {this.state.countryInInput}</button>
+                <input className="searchinput"></input>
 
             </div >
 
