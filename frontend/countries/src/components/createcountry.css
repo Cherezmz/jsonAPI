@@ -21,3 +21,20 @@
     border-radius: 10px;
 
 }
+
+pcreate{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.createSubmit{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+    width: 75px;
+    height:25px;
+    margin-top: 20px;
+    border-radius: 10px; 
+    text-align: auto;
+}

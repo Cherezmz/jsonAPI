@@ -35,7 +35,7 @@ router.get("/country/cap/:capital", (req, res) => {
 
 
 //add a new country
-router.post("/country", function (req, res, next) {
+router.post("/create", function (req, res, next) {
     //create an instance of db where 
     //we will save new data
 
@@ -45,7 +45,7 @@ router.post("/country", function (req, res, next) {
     //use create method
     Country.create(req.body)
         .then(function (country) {
-            res.send(country);
+            res.json(country);
         }).catch(next);
 });
 
