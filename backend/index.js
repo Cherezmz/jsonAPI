@@ -28,3 +28,9 @@ app.use(function(err, req, res, next) {
 app.listen(process.env.port || 4000, function() {
   console.log("I'm listening");
 });
+
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
