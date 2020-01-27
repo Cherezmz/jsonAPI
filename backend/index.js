@@ -1,5 +1,5 @@
 const express = require("express");
-const routes = require("./routs/countryroute")
+const routes = require("./routs/countryroute");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -20,12 +20,11 @@ app.use(bodyParser.json());
 app.use("/generalinfo", routes);
 
 //middleware for error handling
-app.use(function (err, req, res, next) {
-    //console.log(err)
-    res.status(422).send({ error: err.message })
-})
+app.use(function(err, req, res, next) {
+  //console.log(err)
+  res.status(422).send({ error: err.message });
+});
 
-
-app.listen(process.env.port || 4000, function () {
-    console.log("I'm listening")
-})
+app.listen(process.env.port || 4000, function() {
+  console.log("I'm listening");
+});
