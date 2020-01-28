@@ -1,4 +1,4 @@
-//seed is used to tell coputer to create db
+//seed is used to tell computer to create db
 //according to schema. That is why 
 // 1-s line is file with schema model
 //after seeding each entry has its own DB ID
