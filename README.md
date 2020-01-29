@@ -22,19 +22,14 @@ It has CRUD functionality: user may retrieve all the data, search a particular c
 
 | Method  | path  | description  |
 |---|---|---|
-| GET  | /generalinfor/country  |  all countries  |
-| GET  |   |   |
-| GET |   |   |
-|  POST |   |   |
-|  DELETE |   |   |
-| PUT |   |   
+| GET  | /generalinfo/country  |  all countries  |
+| GET  | /generalinfo/country/:name  | Find a country by its name  |
+| GET | /generalinfo/country/cap/:name  | Find what country capital is  |
+|  POST | /generalinfo/create  |  Create a new country |
+|  DELETE | /delete/:id  | Delite a country  |
+| PUT | /update  |   Update a country information
 
-: ... - 	
-:	.../generalinfor/country/:name	Find a country by its name
-: 	.../generalinfor/country/cap/:name	Find what country capital is
-:...	/generalinfor/create	Create a new country	
-	/delete/:id	Delite a country
-	/update	Update a country information
+
 
 ### How to start
 
