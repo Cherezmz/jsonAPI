@@ -20,8 +20,16 @@ It has CRUD functionality: user may retrieve all the data, search a particular c
 
 ### API RESTful Paths:
 
-GET: .../generalinfor/country - all countries	
-GET:	.../generalinfor/country/:name	Find a country by its name
+| GET  |   |   |
+|---|---|---|
+| GET  |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
+
+: .../generalinfor/country - all countries	
+:	.../generalinfor/country/:name	Find a country by its name
 GET: 	.../generalinfor/country/cap/:name	Find what country capital is
 POST:...	/generalinfor/create	Create a new country	
 DELETE	/delete/:id	Delite a country
