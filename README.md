@@ -26,7 +26,7 @@ It has CRUD functionality: user may retrieve all the data, search a particular c
 | GET  | /generalinfo/country/:name  | Find a country by its name  |
 | GET | /generalinfo/country/cap/:name  | Find what country capital is  |
 |  POST | /generalinfo/create  |  Create a new country |
-|  DELETE | /delete/:id  | Delite a country  |
+|  DELETE | /delete/:id  | Delete a country  |
 | PUT | /update  |   Update a country information
 
 
