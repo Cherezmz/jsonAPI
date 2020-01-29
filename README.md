@@ -23,17 +23,17 @@ It has CRUD functionality: user may retrieve all the data, search a particular c
 | GET  |   |   |
 |---|---|---|
 | GET  |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-
+| GET |   |   |
+|  POST |   |   |
+|  DELETE |   |   |
+| PUT |   |   
 
 : .../generalinfor/country - all countries	
 :	.../generalinfor/country/:name	Find a country by its name
-GET: 	.../generalinfor/country/cap/:name	Find what country capital is
-POST:...	/generalinfor/create	Create a new country	
-DELETE	/delete/:id	Delite a country
-PUT	/update	Update a country information
+: 	.../generalinfor/country/cap/:name	Find what country capital is
+:...	/generalinfor/create	Create a new country	
+	/delete/:id	Delite a country
+	/update	Update a country information
 
 ### How to start
 
