@@ -17,6 +17,7 @@ I created JSON file using API with a lot of information.
 
 It has CRUD functionality: user may retrieve all the data, search a particular country,  create new one and update a country information.
 
+The app was deployed to Heroku and is accessible here: https://igorsjsonapi.herokuapp.com/ 
 
 ### API RESTful Paths:
 
@@ -45,4 +46,5 @@ run index.js using node
 $ node index.js
 ```
 use local host to retrieve the data
+
 
